@@ -1,0 +1,39 @@
+/**
+ * Theme Name:   WowStrap
+ * Version:      1.0.0
+ * Author:       Adiboo Creative Design
+ * Author URI:   https://www.adibocreative.com/
+ * Description:  
+ * Theme URI:    https://www.adiboocreative.com/product/wowstrap-theme/
+ * License:      GNU/GPL V2
+ * License URI:  
+ * Tag:          two-columns, three-columns, custom-menu, featured-images, theme-options, translation-ready
+ * Text Domain:  wowstrap
+ */
+
+/**
+ * Bagian Kepala dan Navigasi
+ */
+#top-nav {
+    background: #1f0e54;
+    color: white!important;
+    padding: 0;
+}
+#top-nav .sekilas-post .title-sekilas,
+#top-nav .sekilas-post .content-sekilas {
+    padding: .5rem .75rem;
+    display: inline-block;
+}
+#top-nav .sekilas-post .title-sekilas {
+    background: rgba(0,0,0,.3)
+}
+#top-nav .sekilas-post a {
+    color: white!important;
+    text-decoration: none;
+}
+#top-nav input[type="text"] {
+    border: 0;
+    padding: .5rem;
+    background: transparent;
+    color: white;
+}
