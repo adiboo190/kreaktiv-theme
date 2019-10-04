@@ -1,0 +1,189 @@
+/**
+ * Theme Name:   WowStrap
+ * Version:      1.0.0-Beta-Mabar.05102019
+ * Author:       Adiboo Creative Design
+ * Author URI:   https://www.adibocreative.com/
+ * Description:  
+ * Theme URI:    https://www.adiboocreative.com/product/wowstrap-theme/
+ * License:      GNU/GPL V2
+ * License URI:  
+ * Tags:         two-columns, three-columns, custom-menu, featured-images, theme-options, translation-ready
+ * Text Domain:  wowstrap
+ */
+
+a *, 
+a:hover * {outline: 0;}
+
+/** WordPress Styling **/
+.wp-caption {
+    color: #eee;
+    padding: 1rem .75rem;
+}
+.wp-caption-text {
+    color: #eee;
+}
+.screen-reader-text {}
+.gallery-caption {
+    color: white;
+}
+.bypostauthor {}
+.alignright {
+    float: right;
+    text-align: right;
+}
+.alignleft {
+    float: left;
+    text-align: left;
+}
+.aligncenter {
+    text-align: center;
+}
+
+/**
+ * Bagian Kepala dan Navigasi
+ */
+#top-nav {
+    background: #1f0e54;
+    color: white!important;
+    padding: 0;
+}
+#top-nav * {
+    transition: all .3s;
+}
+.title-sekilas {
+    background: #140838;
+    color: white;
+}
+.content-sekilas a {color: rgba(255,255,255,.5); }
+
+#top-nav ul .social, #top-nav ul, #top-nav ul li {
+    display: inline!important;
+}
+#top-nav ul .social {
+    padding: .75rem;
+    color: white;
+    text-align: center!important;
+}
+#top-nav ul .social a,
+#top-nav ul .social a:hover {
+    color: white;
+    text-decoration: none;
+    text-align: center!important;
+}
+#top-nav .social.social-fb:hover {
+    background: #2d32c7;
+}
+#top-nav .social.social-tw:hover {
+    background: #479dda;
+}
+#top-nav .social.social-ig:hover {
+    background: #333;
+    color: black!important;
+}
+#top-nav .social.social-yt:hover {
+    background: #d02626;
+    color: black!important;
+}
+
+/**
+ * Bagian Kepala Laman
+ */
+.section-head .carousel-caption {
+    padding: 1rem .75rem;
+    background: rgba(0,0,0,.5);
+    color: white!important;
+}
+.section-head .carousel-caption a {
+    color: white!important;
+}
+
+/** After Slideshow **/
+.content {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+.fadeIn-top{
+  top: 20%;
+}
+
+.fadeIn-left{
+  left: 20%;
+}
+
+.fadeIn-right{
+  left: 80%;
+}
+
+/**
+ * Bagian Konten
+ */
+.entry-meta * {
+    color: #333;
+}
+
+.wp-block-image {
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+.wp-block-image figcaption {
+  padding: 1rem;
+  background: #eee;
+  margin: 2rem 0 0 0;
+}
