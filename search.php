@@ -26,7 +26,7 @@ get_header(); ?>
 		<?php if (have_posts()) {
 			$no = 0;
 			while (have_posts()) { the_post(); $no++;
-				get_template_part('content/content', 'search');
+				get_template_part('content/entry', 'search');
 			}
 		} else {
 			get_template_part('content/entry', 'none');
