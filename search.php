@@ -14,7 +14,7 @@
 
 $sidebar_checker = get_theme_mod ( 'sidebar_layout', 'right' );
 
-get_header();?>
+get_header(); ?>
 <div class="container mt-3">
   <div class="row">
 	<?php if ( $sidebar_checker == 'left' ) { ?>
@@ -25,8 +25,8 @@ get_header();?>
     <div class="col-md-8">
 		<?php if (have_posts()) {
 			$no = 0;
-			while (have_posts()) { the_post();
-				get_template_part('content/entry', 'page');
+			while (have_posts()) { the_post(); $no++;
+				get_template_part('content/content', 'search');
 			}
 		} else {
 			get_template_part('content/entry', 'none');
@@ -42,5 +42,5 @@ get_header();?>
 
 <?php get_footer();
 
-/* End of file page.php */
-/* Location: ./wp-content/themes/wowstrap/page.php */
+/* End of file index.php */
+/* Location: ./wp-content/themes/wowstrap/index.php */

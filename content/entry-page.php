@@ -12,9 +12,11 @@
  */ 
 ?><div <?php echo post_class(); ?> id="<?php echo the_ID(); ?>">
 	<div class="entry-header">
+		<?php if ( has_post_thumbnail() ) { ?>
 		<figure class="post-<?php echo the_ID(); ?>">
-			<?php echo (has_post_thumbnail() ? get_the_post_thumbnail() : '<img src="'.get_template_directory_uri().'/assets/images/1.png" class="d-block w-100" />'); ?>
+			<?php echo get_the_post_thumbnail(); ?>
 		</figure>
+		<?php } ?>
 		<?php echo the_title( '<h1 class="entry-header">', '</h1>' ); ?>
 	</div>
 	<div class="entry-content border-bottom">

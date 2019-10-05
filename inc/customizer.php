@@ -38,9 +38,13 @@ if (class_exists('Kirki')) {
 					'settings'    => 'sidebar_layout',
 					'label'       => esc_html__('Penataan Bilah Sisi', 'wowstrap'),
 					'description' => __('Pilihlah tataan bilah sisi sesuai keinginan anda.', 'wowstrap'),
-					'section'     => 'nav_top_sections',
-					'default'     => 0,
-					'choices'	  => array( __('Bawaan', 'wowstrap'), __('Kanan', 'wowstrap'), __('Kiri', 'wowstrap'), )
+					'section'     => 'basic_section',
+					'default'     => 'right',
+					'choices'	  => array( 
+						'default' => __('Bawaan', 'wowstrap'), 
+						'right' => __('Kanan', 'wowstrap'), 
+						'left'  => __('Kiri', 'wowstrap'), 
+					)
 				]);
 
 		# Section 1

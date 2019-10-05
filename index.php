@@ -17,7 +17,7 @@ $sidebar_checker = get_theme_mod ( 'sidebar_layout', 'right' );
 get_header(); ?>
 <div class="container mt-3">
   <div class="row">
-	<?php if ( $sidebar_checker === 'left' ) { ?>
+	<?php if ( $sidebar_checker == 'left' ) { ?>
     <div class="col-md-4">
 		<?php echo get_sidebar();?>
 	</div>
@@ -32,7 +32,7 @@ get_header(); ?>
 			get_template_part('content/entry', 'none');
 		} ?>
 	</div>
-	<?php if ( $sidebar_checker === 'right' ) { ?>
+	<?php if ( $sidebar_checker == 'right' or $sidebar_checker == 'default' ) { ?>
     <div class="col-md-4">
 		<?php echo get_sidebar();?>
 	</div>

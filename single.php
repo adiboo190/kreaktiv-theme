@@ -12,9 +12,16 @@
  * @link        https://www.adiboocreative.com/product/wowstrap-theme/
  */
 
+$sidebar_checker = get_theme_mod ( 'sidebar_layout', 'right' );
+
 get_header();?>
 <div class="container mt-3">
   <div class="row">
+	<?php if ( $sidebar_checker == 'left' ) { ?>
+    <div class="col-md-4">
+		<?php echo get_sidebar();?>
+	</div>
+	<?php } ?>
     <div class="col-md-8">
 		<?php if (have_posts()) {
 			$no = 0;
@@ -25,9 +32,11 @@ get_header();?>
 			get_template_part('content/content', 'none');
 		} ?>
 	</div>
+	<?php if ( $sidebar_checker == 'right' or $sidebar_checker == 'default' ) { ?>
     <div class="col-md-4">
 		<?php echo get_sidebar();?>
 	</div>
+	<?php } ?>
   </div>
 </div>
 
