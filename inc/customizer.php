@@ -25,6 +25,24 @@ if (class_exists('Kirki')) {
 			'description' => esc_html__('Pengaturan tambahan tema WowStrap', 'wowstrap'),
 		));
 
+		# Section 0
+		Kirki::add_section('basic_section', array(
+				'title'       => esc_html__('Pengaturan Dasar dan Layout', 'wowstrap'),
+				'description' => esc_html__('Aturlah tema ini sesuai dengan keinginan anda.', 'wowstrap'),
+				'panel'       => 'header_panel',
+				'priority'    => 150,
+			));
+
+			Kirki::add_field('theme_config_id', [
+					'type'        => 'select',
+					'settings'    => 'sidebar_layout',
+					'label'       => esc_html__('Penataan Bilah Sisi', 'wowstrap'),
+					'description' => __('Pilihlah tataan bilah sisi sesuai keinginan anda.', 'wowstrap'),
+					'section'     => 'nav_top_sections',
+					'default'     => 0,
+					'choices'	  => array( __('Bawaan', 'wowstrap'), __('Kanan', 'wowstrap'), __('Kiri', 'wowstrap'), )
+				]);
+
 		# Section 1
 		Kirki::add_section('nav_top_sections', array(
 				'title'       => esc_html__('Bagian Navigasi Atas', 'wowstrap'),
