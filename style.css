@@ -181,6 +181,7 @@ a:hover * {outline: 0;}
 .wp-block-image {
   border-radius: 5px;
   border: 1px solid #eee;
+  box-shadow: 0 0 1rem #e2e0e0;
 }
 .wp-block-image figcaption {
   padding: 1rem;
