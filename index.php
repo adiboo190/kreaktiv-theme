@@ -31,6 +31,7 @@ get_header(); ?>
 		} else {
 			get_template_part('content/entry', 'none');
 		} ?>
+		<?php wowstrap_paginations(); ?>
 	</div>
 	<?php if ( $sidebar_checker == 'right' or $sidebar_checker == 'default' ) { ?>
     <div class="col-md-4">

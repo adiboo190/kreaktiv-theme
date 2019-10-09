@@ -1,0 +1,24 @@
+/** WordPress Styling **/
+.wp-caption {
+    color: #eee;
+    padding: 1rem .75rem;
+}
+.wp-caption-text {
+    color: #eee;
+}
+.screen-reader-text {}
+.gallery-caption {
+    color: white;
+}
+.bypostauthor {}
+.alignright {
+    float: right;
+    text-align: right;
+}
+.alignleft {
+    float: left;
+    text-align: left;
+}
+.aligncenter {
+    text-align: center;
+}

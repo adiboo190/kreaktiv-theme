@@ -56,11 +56,11 @@ $array  = array(
           <div class="col-md-2 float-right text-center align-self-center">
             <!-- Button Group Social Media -->
             <div class="btn-group" role="group">
-              <a href="<?php echo get_theme_mod( 'fb_links', 'https://fb.me/cakadi.id' ); ?>" class="btn btn-sm btn-primary"><i class="fab fa-facebook"></i></a>
-              <a href="<?php echo get_theme_mod( 'tw_links', 'https://www.twitter.com/adiboocreative' ); ?>" class="btn btn-sm btn-info"><i class="fab fa-twitter"></i></a>
-              <a href="<?php echo get_theme_mod( 'yt_links', 'https://www.youtunav_align_typebe.com/' ); ?>" class="btn btn-sm btn-danger"><i class="fab fa-youtube"></i></a>
-              <a href="<?php echo get_theme_mod( 'ig_links', 'https://www.instagram.com/adiboocreative' ); ?>" class="btn btn-sm btn-light"><i class="fab fa-instagram"></i></a>
-              <a href="<?php echo get_theme_mod( 'wa_links', 'https://chat.whatsapp.com/send?phone=6281234771365' ); ?>" class="btn btn-sm btn-success"><i class="fab fa-whatsapp"></i></a>
+              <a href="<?php echo get_theme_mod( 'fb_links', 'https://fb.me/cakadi.id' ); ?>" class="btn btn-sm btn-social-fb"><i class="fab fa-facebook"></i></a>
+              <a href="<?php echo get_theme_mod( 'tw_links', 'https://www.twitter.com/adiboocreative' ); ?>" class="btn btn-sm btn-social-tw"><i class="fab fa-twitter"></i></a>
+              <a href="<?php echo get_theme_mod( 'yt_links', 'https://www.youtunav_align_typebe.com/' ); ?>" class="btn btn-sm btn-social-yt"><i class="fab fa-youtube"></i></a>
+              <a href="<?php echo get_theme_mod( 'ig_links', 'https://www.instagram.com/adiboocreative' ); ?>" class="btn btn-sm btn-social-ig"><i class="fab fa-instagram"></i></a>
+              <a href="<?php echo get_theme_mod( 'wa_links', 'https://chat.whatsapp.com/send?phone=6281234771365' ); ?>" class="btn btn-sm btn-social-whatsapp"><i class="fab fa-whatsapp"></i></a>
             </div>
           </div> <!-- /.col-md-4 -->
         </div> <!-- /.row -->

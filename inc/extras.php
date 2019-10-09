@@ -64,3 +64,42 @@ function wowstrap_custom_logo_hook ( $html )
   return $html;
 }
 add_filter ( 'get_custom_logo', 'wowstrap_custom_logo_hook' );
+
+/**
+ * Change Class Page Navigations
+ *
+ * @package     WordPress
+ * @subpackage  WowStrap
+ * @since       1.0.0 / Senin, 16 September 2019
+ * @see         https://smutek.net/filtering-the-wordpress-custom-logo/
+ * @link        https://www.adiboocreative.com/product/wowstrap-theme/
+ */
+add_filter('next_posts_link_attributes', 'posts_link_attributes');
+add_filter('previous_posts_link_attributes', 'posts_link_attributes');
+
+function posts_link_attributes() {
+    return 'class="page-link"';
+}
+
+/**
+ * Check If is Connected
+ *
+ * @package     WordPress
+ * @subpackage  WowStrap
+ * @since       1.0.0 / Senin, 16 September 2019
+ * @see         https://smutek.net/filtering-the-wordpress-custom-logo/
+ * @link        https://www.adiboocreative.com/product/wowstrap-theme/
+ */
+function is_connected()
+{
+    $connected = @fsockopen("www.google.com", 443); 
+                                        //website, port  (try 80 or 443)
+    if ($connected){
+        $is_conn = true; //action when connected
+        fclose($connected);
+    } else {
+        $is_conn = false; //action in connection failure
+    }
+    return $is_conn;
+
+}

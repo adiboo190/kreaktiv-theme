@@ -66,5 +66,14 @@
     'data-toggle'    : 'tooltip',
     'data-placement' : 'top'
   });
+
+  // Comments
+  $( '.comment-form-cookies-consent' ).addClass('custom-control').addClass('custom-checkbox').addClass('my-1').addClass('mr-sm-2');
+  $( '#wp-comment-cookies-consent' ).addClass('custom-control-input');
+  $( '.comment-form-cookies-consent label' ).addClass('custom-control-label');
+
+  $('.comment-edit-link').addClass('badge-primary').addClass('badge').addClass('ml-2');
+  $('.comment-reply-link').addClass('badge-primary').addClass('badge');
+
 })(jQuery); // End of use strict
 

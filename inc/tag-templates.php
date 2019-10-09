@@ -39,7 +39,7 @@ if (!function_exists('wowstrap_recent_after_slider')) {
 
 		if ( $query->have_posts() ) {
 			while ( $query->have_posts() ) { $query->the_post();
-				// var_dump(strlen(get_the_title()));
+				
 				echo "<div class=\"col-6\">\n";
 					echo '<div class="content">
 	    				<a href="' . get_the_permalink() . '" target="_blank">
@@ -84,8 +84,10 @@ if (!function_exists('wowstrap_sekilas')) {
 			while ($query->have_posts()) {$query->the_post(); $no++;
 				if ($no > 1) {
 					echo '<span class="align-self-center mx-3">|</span><span class="sekilas sekilas-'.$no.'"><a href="'.get_the_permalink().'" title="'.get_the_title().'">'.get_the_title().'</a></span>';
+				} elseif ($no === 5) {
+					echo '<span class="sekilas sekilas-'.$no.'"><a href="'.get_the_permalink().'" title="'.get_the_title().'">'.get_the_title().'</a></span><span class="align-self-center mx-3">|</span>';
 				} else {
-					echo '<span class="sekilas sekilas-'.$no.'"><a href="'.get_the_permalink().'" title="'.get_the_title().'">'.get_the_title().'</a></span>';
+					echo '<span class="align-self-center mx-3">|</span><span class="sekilas sekilas-'.$no.'"><a href="'.get_the_permalink().'" title="'.get_the_title().'">'.get_the_title().'</a></span>';
 				}
 			}
 			echo '</marquee>';

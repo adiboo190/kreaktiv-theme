@@ -14,9 +14,12 @@ $dir = [get_template_directory_uri(), get_template_directory()];
 
 // Get All Files on folder inc
 require "{$dir[1]}/inc/class.wp-navwalker.php";
+require "{$dir[1]}/inc/class.comments-walker.php";
 require "{$dir[1]}/inc/customizer.php";
 require "{$dir[1]}/inc/extras.php";
 require "{$dir[1]}/inc/tag-templates.php";
+require "{$dir[1]}/inc/paginations.php";
+require "{$dir[1]}/inc/class.comment-user.php";
 
 if (!function_exists('wowstrap_styling')) {
 	/**
@@ -28,11 +31,15 @@ if (!function_exists('wowstrap_styling')) {
 		wp_enqueue_style('wowstrap-style', get_stylesheet_uri(), wp_get_theme()->get('Version'), false, 'all');
 		wp_enqueue_style('fa-style', get_template_directory_uri().'/assets/vendor/fontawesome-free/css/all.min.css', '5.9.1', true);
 
+		wp_enqueue_style('quill-style', 'https://cdn.quilljs.com/1.3.6/quill.snow.css', '3.0.6', true);
+
 		wp_enqueue_script('jQuery', get_template_directory_uri().'/assets/vendor/jquery/jquery.min.js', '3.2.1', true, true);
 		wp_enqueue_script('jQuery-easing', get_template_directory_uri().'/assets/vendor/jquery-easing/jquery.easing.min.js', '3.2.1', true, true);
 		wp_enqueue_script('bootstrap-javascript', get_template_directory_uri().'/assets/vendor/bootstrap/js/bootstrap.bundle.min.js', '4.3.1', true, true);
-		wp_enqueue_script('fa-javascript', get_template_directory_uri().'/assets/vendor/fontawesome-free/js/all.min.js', '5.9.1', true, true);
+		wp_enqueue_script('fa-javascript', get_template_directory_uri().'/assets/vendor/fontawesome-free/js/all.min.js', '5.9.1');
 		wp_enqueue_script('ws-javascript', get_template_directory_uri().'/assets/js/ws.js', wp_get_theme()->get('Version'), true, true);
+
+		wp_enqueue_script('quill-js', 'https://cdn.quilljs.com/1.3.6/quill.js', '3.0.6', true, true);
 
 		# Enable Post Comment Script
 		if (is_singular()) {

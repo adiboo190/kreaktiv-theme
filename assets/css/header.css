@@ -1,0 +1,73 @@
+/**
+ * Bagian Kepala dan Navigasi
+ */
+#top-nav {
+    background: #1f0e54;
+    color: white!important;
+    padding: 0;
+}
+#top-nav * {
+    transition: all .3s;
+}
+.title-sekilas {
+    background: #140838;
+    color: white;
+}
+.content-sekilas a {color: rgba(255,255,255,.5); }
+
+#top-nav ul .social, #top-nav ul, #top-nav ul li {
+    display: inline!important;
+}
+#top-nav ul .social {
+    padding: .75rem;
+    color: white;
+    text-align: center!important;
+}
+#top-nav ul .social a,
+#top-nav ul .social a:hover {
+    color: white;
+    text-decoration: none;
+    text-align: center!important;
+}
+#top-nav .social.social-fb:hover {
+    background: #2d32c7;
+}
+#top-nav .social.social-tw:hover {
+    background: #479dda;
+}
+#top-nav .social.social-ig:hover {
+    background: #333;
+    color: black!important;
+}
+#top-nav .social.social-yt:hover {
+    background: #d02626;
+    color: black!important;
+}
+
+.btn-social-fb,
+.btn-social-yt,
+.btn-social-tw,
+.btn-social-ig,
+.btn-social-whatsapp {
+  color: white;
+}
+.btn.btn-sm.btn-social-fb:hover {
+  background: #3b5998;
+  color: white;
+}
+.btn.btn-sm.btn-social-ig:hover {
+  background: #eee;
+  color: black;
+}
+.btn.btn-sm.btn-social-yt:hover {
+  background: #c23321;
+  color: white;
+}
+.btn-social-tw:hover {
+  background: #2795e9;
+  color: white;
+}
+.btn-social-whatsapp:hover {
+  background: #00e676;
+  color: white
+}
